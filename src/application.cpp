@@ -1,4 +1,6 @@
 #include "application.h"
+#include "framework/volumenode.h"
+#include "graphics/volumeMaterial.h"
 
 bool render_wireframe = false;
 Camera* Application::camera = nullptr;
@@ -27,6 +29,12 @@ void Application::init(GLFWwindow* window)
     example->mesh = Mesh::Get("res/meshes/sphere.obj");
     example->material = new StandardMaterial();
     this->node_list.push_back(example);
+
+    // Volume node addition 
+    VolumeNode* volume = new VolumeNode("Volume Node");
+    volume->mesh = Mesh::Get("res/meshes/cube.obj");
+    volume->material = new VolumeMaterial();
+    this->node_list.push_back(volume);
 }
 
 void Application::update(float dt)
@@ -42,7 +50,7 @@ void Application::update(float dt)
 void Application::render()
 {
     // Set the clear color (the background color)
-    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+    glClearColor(this->background_color.r,this->background_color.g,this->background_color.b,1.0f);
 
     // Clear the window and the depth buffer
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -67,6 +75,7 @@ void Application::renderGUI()
     if (ImGui::TreeNodeEx("Scene", ImGuiTreeNodeFlags_DefaultOpen))
     {
         ImGui::ColorEdit3("Ambient light", (float*)&this->ambient_light);
+        ImGui::ColorEdit3("Background color", (float*)&this->background_color);
 
         if (ImGui::TreeNode("Camera")) {
             this->camera->renderInMenu();

@@ -1,0 +1,124 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"libraries/easyVDB/libraries/zlib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 187,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 193,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 196,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 199,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Users/u215241/source/repos/ACGVolumeRendering/out/install/x64-Debug/lib",
+			"paths" : 
+			[
+				"libraries/easyVDB/zlib_build/zlibd.lib"
+			],
+			"targetId" : "zlib::@7e2ffd214c5ea0257a95",
+			"targetIndex" : 11,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Users/u215241/source/repos/ACGVolumeRendering/out/install/x64-Debug/bin",
+			"paths" : 
+			[
+				"libraries/easyVDB/zlib_build/zlibd.dll"
+			],
+			"targetId" : "zlib::@7e2ffd214c5ea0257a95",
+			"targetIndex" : 11,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Users/u215241/source/repos/ACGVolumeRendering/out/install/x64-Debug/lib",
+			"paths" : 
+			[
+				"libraries/easyVDB/zlib_build/zlibstaticd.lib"
+			],
+			"targetId" : "zlibstatic::@7e2ffd214c5ea0257a95",
+			"targetIndex" : 12,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "C:/Users/u215241/source/repos/ACGVolumeRendering/out/install/x64-Debug/include",
+			"paths" : 
+			[
+				"out/build/x64-Debug/libraries/easyVDB/zlib_build/zconf.h",
+				"libraries/easyVDB/libraries/zlib/zlib.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "C:/Users/u215241/source/repos/ACGVolumeRendering/out/install/x64-Debug/share/man/man3",
+			"paths" : 
+			[
+				"libraries/easyVDB/libraries/zlib/zlib.3"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "C:/Users/u215241/source/repos/ACGVolumeRendering/out/install/x64-Debug/share/pkgconfig",
+			"paths" : 
+			[
+				"out/build/x64-Debug/libraries/easyVDB/zlib_build/zlib.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "libraries/easyVDB/zlib_build",
+		"source" : "libraries/easyVDB/libraries/zlib"
+	}
+}

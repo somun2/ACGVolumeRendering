@@ -1,0 +1,24 @@
+# ninja log v7
+33	261	8159542090925599	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-mkdir	4edc6ce29eb0ba74
+33	261	8159542090925599	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-mkdir	4edc6ce29eb0ba74
+262	855	8159542096901914	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-download	e79209b3367981ef
+262	855	8159542096901914	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-download	e79209b3367981ef
+856	956	8159542097889394	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-update	b16f0067df0c87e7
+856	956	8159542097889394	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-update	b16f0067df0c87e7
+956	1057	8159542098932373	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-patch	9d142a41359c20ee
+956	1057	8159542098932373	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-patch	9d142a41359c20ee
+1058	1151	8159542099868051	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-copyfile	6760cf62d6567fc5
+1058	1151	8159542099868051	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-src/ImGuizmo.h	6760cf62d6567fc5
+1058	1151	8159542099868051	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-copyfile	6760cf62d6567fc5
+1151	1347	8159542101669842	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-configure	94805c4ab840faa1
+1151	1347	8159542101669842	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-configure	94805c4ab840faa1
+1348	1497	8159542103193178	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-build	e3030eb9de5ca794
+1348	1497	8159542103193178	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-build	e3030eb9de5ca794
+1498	1742	8159542105772046	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-install	5cea9f69eae75ede
+1498	1742	8159542105772046	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-install	5cea9f69eae75ede
+1743	1920	8159542106683962	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-test	8b0ba1d3dcbe12e3
+1743	1920	8159542106683962	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-test	8b0ba1d3dcbe12e3
+1920	2028	8159542108608781	CMakeFiles/imguizmo_h-populate-complete	44e03dc0de86cb8c
+1920	2028	8159542108608781	imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-done	44e03dc0de86cb8c
+1920	2028	8159542108608781	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/CMakeFiles/imguizmo_h-populate-complete	44e03dc0de86cb8c
+1920	2028	8159542108608781	C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/_deps/imguizmo_h-subbuild/imguizmo_h-populate-prefix/src/imguizmo_h-populate-stamp/imguizmo_h-populate-done	44e03dc0de86cb8c

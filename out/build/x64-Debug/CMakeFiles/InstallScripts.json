@@ -1,0 +1,17 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/src/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/docs/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glew-cmake/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glm/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glm/glm/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/easyVDB/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/easyVDB/zlib_build/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/easyVDB/libraries/c-blosc/cmake_install.cmake",
+		"C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/easyVDB/libraries/c-blosc/blosc/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

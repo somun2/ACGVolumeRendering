@@ -1,0 +1,500 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "Doxygen::doxygen::@8059a9236cfad5662190",
+					"jsonFile" : "target-Doxygen__doxygen-Debug-7a90e1f5974d329dcb0f.json",
+					"name" : "Doxygen::doxygen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "OpenGL::GL::@c91b4f570a1fcddf2341",
+					"jsonFile" : "target-OpenGL__GL-Debug-10746ef727a7c09e6b6b.json",
+					"name" : "OpenGL::GL",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "OpenGL::GLU::@c91b4f570a1fcddf2341",
+					"jsonFile" : "target-OpenGL__GLU-Debug-ea4f0487f0c15bb1b32f.json",
+					"name" : "OpenGL::GLU",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Threads::Threads::@35bb805c068f9c219110",
+					"jsonFile" : "target-Threads__Threads-Debug-5e9e13e22a3d72c5509d.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "Threads::Threads::@f9c32cb756523036f1c6",
+					"jsonFile" : "target-Threads__Threads-Debug-47fefd4f9496e406426a.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "glm-header-only::@c665460d81662f7ff23a",
+					"jsonFile" : "target-glm-header-only-Debug-553297a1cd68f93fa904.json",
+					"name" : "glm-header-only",
+					"projectIndex" : 3
+				}
+			],
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4,
+						5,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.9"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						3
+					],
+					"build" : "libraries/glfw",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libraries.glfw-Debug-1ecb9f3a03072aee3e24.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "libraries/glfw",
+					"targetIndexes" : 
+					[
+						9
+					]
+				},
+				{
+					"build" : "libraries/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libraries.glfw.src-Debug-65b8090736d554d9ace4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libraries/glfw/src",
+					"targetIndexes" : 
+					[
+						4,
+						10
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : "libraries/glfw/docs",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libraries.glfw.docs-Debug-a6e12fb52715afdd1d20.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "libraries/glfw/docs",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2
+					],
+					"build" : "libraries/glew-cmake",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libraries.glew-cmake-Debug-213f622c329b1510427d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "libraries/glew-cmake",
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"build" : "libraries/glm",
+					"childIndexes" : 
+					[
+						6
+					],
+					"jsonFile" : "directory-libraries.glm-Debug-1afdaf184b7a2fbc0b90.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "libraries/glm"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						5
+					],
+					"build" : "libraries/glm/glm",
+					"jsonFile" : "directory-libraries.glm.glm-Debug-ff5fcef9948aaecafc2c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 3,
+					"source" : "libraries/glm/glm",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "libraries/easyVDB",
+					"childIndexes" : 
+					[
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libraries.easyVDB-Debug-63e4839a6bc10d935938.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "libraries/easyVDB",
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"build" : "libraries/easyVDB/zlib_build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libraries.easyVDB.zlib_build-Debug-4d17ea57634fd17c1f00.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.4.4"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 5,
+					"source" : "libraries/easyVDB/libraries/zlib",
+					"targetIndexes" : 
+					[
+						11,
+						12
+					]
+				},
+				{
+					"build" : "libraries/easyVDB/libraries/c-blosc",
+					"childIndexes" : 
+					[
+						10
+					],
+					"jsonFile" : "directory-libraries.easyVDB.libraries.c-blosc-Debug-a8eb5667ef1f774558ad.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 6,
+					"source" : "libraries/easyVDB/libraries/c-blosc"
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						4
+					],
+					"build" : "libraries/easyVDB/libraries/c-blosc/blosc",
+					"jsonFile" : "directory-libraries.easyVDB.libraries.c-blosc.blosc-Debug-d7c3ba04f58baf120896.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 6,
+					"source" : "libraries/easyVDB/libraries/c-blosc/blosc",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ACG",
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						4,
+						9,
+						10
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "glew",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7,
+						8
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						5
+					],
+					"directoryIndexes" : 
+					[
+						5,
+						6
+					],
+					"name" : "glm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "easyVDB",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "zlib",
+					"parentIndex" : 4,
+					"targetIndexes" : 
+					[
+						11,
+						12
+					]
+				},
+				{
+					"abstractTargetIndexes" : 
+					[
+						4
+					],
+					"directoryIndexes" : 
+					[
+						9,
+						10
+					],
+					"name" : "blosc",
+					"parentIndex" : 4,
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ACG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ACG-Debug-09e3fca7ea39f9d59fab.json",
+					"name" : "ACG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 10,
+					"id" : "blosc_static::@f9c32cb756523036f1c6",
+					"jsonFile" : "target-blosc_static-Debug-c5e7cc58177fa8c1b276.json",
+					"name" : "blosc_static",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "docs::@8059a9236cfad5662190",
+					"jsonFile" : "target-docs-Debug-16f28bbb4e4d93ba3062.json",
+					"name" : "docs",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "easyVDB::@7551e392962668b50e09",
+					"jsonFile" : "target-easyVDB-Debug-675df76e3aa5b9b1ff8a.json",
+					"name" : "easyVDB",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glfw::@7d8f67159c48f691a52d",
+					"jsonFile" : "target-glfw-Debug-ae0f6bbc60e1f378f399.json",
+					"name" : "glfw",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "glm::@c665460d81662f7ff23a",
+					"jsonFile" : "target-glm-Debug-f8488fe86e4a503aa854.json",
+					"name" : "glm",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imgui::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imgui-Debug-37e8705f5189f7866710.json",
+					"name" : "imgui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "libglew_shared::@c91b4f570a1fcddf2341",
+					"jsonFile" : "target-libglew_shared-Debug-3a092070303484183749.json",
+					"name" : "libglew_shared",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "libglew_static::@c91b4f570a1fcddf2341",
+					"jsonFile" : "target-libglew_static-Debug-79e9991b6b62132e476a.json",
+					"name" : "libglew_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@35bb805c068f9c219110",
+					"jsonFile" : "target-uninstall-Debug-6c309a65d45155a7a31d.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "update_mappings::@7d8f67159c48f691a52d",
+					"jsonFile" : "target-update_mappings-Debug-83756899dba0fbbe2ed9.json",
+					"name" : "update_mappings",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "zlib::@7e2ffd214c5ea0257a95",
+					"jsonFile" : "target-zlib-Debug-f1f8d9d28ff2f9768bcf.json",
+					"name" : "zlib",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 8,
+					"id" : "zlibstatic::@7e2ffd214c5ea0257a95",
+					"jsonFile" : "target-zlibstatic-Debug-78e758743d5c5dd68de3.json",
+					"name" : "zlibstatic",
+					"projectIndex" : 5
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug",
+		"source" : "C:/Users/u215241/source/repos/ACGVolumeRendering"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}
