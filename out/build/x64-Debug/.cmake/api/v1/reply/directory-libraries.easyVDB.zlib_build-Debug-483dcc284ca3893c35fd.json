@@ -56,7 +56,7 @@
 				"libraries/easyVDB/zlib_build/zlibd.lib"
 			],
 			"targetId" : "zlib::@7e2ffd214c5ea0257a95",
-			"targetIndex" : 11,
+			"targetIndex" : 10,
 			"targetIsImportLibrary" : true,
 			"type" : "target"
 		},
@@ -69,7 +69,7 @@
 				"libraries/easyVDB/zlib_build/zlibd.dll"
 			],
 			"targetId" : "zlib::@7e2ffd214c5ea0257a95",
-			"targetIndex" : 11,
+			"targetIndex" : 10,
 			"type" : "target"
 		},
 		{
@@ -81,7 +81,7 @@
 				"libraries/easyVDB/zlib_build/zlibstaticd.lib"
 			],
 			"targetId" : "zlibstatic::@7e2ffd214c5ea0257a95",
-			"targetIndex" : 12,
+			"targetIndex" : 11,
 			"type" : "target"
 		},
 		{

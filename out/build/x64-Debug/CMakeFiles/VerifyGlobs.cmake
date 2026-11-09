@@ -178,6 +178,7 @@ set(OLD_GLOB
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/framework/light.cpp"
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/framework/scenenode.cpp"
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/framework/utils.cpp"
+  "C:/Users/u215241/source/repos/ACGVolumeRendering/src/framework/volumenode.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -208,6 +209,7 @@ set(OLD_GLOB
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/framework/light.h"
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/framework/scenenode.h"
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/framework/utils.h"
+  "C:/Users/u215241/source/repos/ACGVolumeRendering/src/framework/volumenode.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -237,6 +239,7 @@ set(OLD_GLOB
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/graphics/mesh.cpp"
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/graphics/shader.cpp"
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/graphics/texture.cpp"
+  "C:/Users/u215241/source/repos/ACGVolumeRendering/src/graphics/volumematerial.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -266,6 +269,7 @@ set(OLD_GLOB
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/graphics/mesh.h"
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/graphics/shader.h"
   "C:/Users/u215241/source/repos/ACGVolumeRendering/src/graphics/texture.h"
+  "C:/Users/u215241/source/repos/ACGVolumeRendering/src/graphics/volumematerial.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

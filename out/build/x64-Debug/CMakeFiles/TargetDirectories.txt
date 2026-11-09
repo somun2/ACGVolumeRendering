@@ -18,7 +18,6 @@ C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/g
 C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/src/CMakeFiles/list_install_components.dir
 C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/src/CMakeFiles/install.dir
 C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/src/CMakeFiles/install/local.dir
-C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/docs/CMakeFiles/docs.dir
 C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/docs/CMakeFiles/edit_cache.dir
 C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/docs/CMakeFiles/rebuild_cache.dir
 C:/Users/u215241/source/repos/ACGVolumeRendering/out/build/x64-Debug/libraries/glfw/docs/CMakeFiles/list_install_components.dir

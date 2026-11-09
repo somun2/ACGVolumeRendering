@@ -5,13 +5,6 @@
 			"abstractTargets" : 
 			[
 				{
-					"directoryIndex" : 3,
-					"id" : "Doxygen::doxygen::@8059a9236cfad5662190",
-					"jsonFile" : "target-Doxygen__doxygen-Debug-7a90e1f5974d329dcb0f.json",
-					"name" : "Doxygen::doxygen",
-					"projectIndex" : 1
-				},
-				{
 					"directoryIndex" : 4,
 					"id" : "OpenGL::GL::@c91b4f570a1fcddf2341",
 					"jsonFile" : "target-OpenGL__GL-Debug-10746ef727a7c09e6b6b.json",
@@ -26,18 +19,18 @@
 					"projectIndex" : 2
 				},
 				{
-					"directoryIndex" : 1,
-					"id" : "Threads::Threads::@35bb805c068f9c219110",
-					"jsonFile" : "target-Threads__Threads-Debug-5e9e13e22a3d72c5509d.json",
-					"name" : "Threads::Threads",
-					"projectIndex" : 1
-				},
-				{
 					"directoryIndex" : 10,
 					"id" : "Threads::Threads::@f9c32cb756523036f1c6",
 					"jsonFile" : "target-Threads__Threads-Debug-47fefd4f9496e406426a.json",
 					"name" : "Threads::Threads",
 					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Threads::Threads::@35bb805c068f9c219110",
+					"jsonFile" : "target-Threads__Threads-Debug-5e9e13e22a3d72c5509d.json",
+					"name" : "Threads::Threads",
+					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 6,
@@ -69,7 +62,7 @@
 					"targetIndexes" : 
 					[
 						0,
-						6
+						5
 					]
 				},
 				{
@@ -84,7 +77,7 @@
 						3
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libraries.glfw-Debug-1ecb9f3a03072aee3e24.json",
+					"jsonFile" : "directory-libraries.glfw-Debug-c807b6d70d26a09b8cda.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -94,13 +87,13 @@
 					"source" : "libraries/glfw",
 					"targetIndexes" : 
 					[
-						9
+						8
 					]
 				},
 				{
 					"build" : "libraries/glfw/src",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libraries.glfw.src-Debug-65b8090736d554d9ace4.json",
+					"jsonFile" : "directory-libraries.glfw.src-Debug-3fb60961a5bdafc8e128.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
@@ -110,39 +103,30 @@
 					"source" : "libraries/glfw/src",
 					"targetIndexes" : 
 					[
-						4,
-						10
+						3,
+						9
 					]
 				},
 				{
-					"abstractTargetIndexes" : 
-					[
-						0
-					],
 					"build" : "libraries/glfw/docs",
-					"hasInstallRule" : true,
-					"jsonFile" : "directory-libraries.glfw.docs-Debug-a6e12fb52715afdd1d20.json",
+					"jsonFile" : "directory-libraries.glfw.docs-Debug-81b30ee387458ea0689f.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.4"
 					},
 					"parentIndex" : 1,
 					"projectIndex" : 1,
-					"source" : "libraries/glfw/docs",
-					"targetIndexes" : 
-					[
-						2
-					]
+					"source" : "libraries/glfw/docs"
 				},
 				{
 					"abstractTargetIndexes" : 
 					[
-						1,
-						2
+						0,
+						1
 					],
 					"build" : "libraries/glew-cmake",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libraries.glew-cmake-Debug-213f622c329b1510427d.json",
+					"jsonFile" : "directory-libraries.glew-cmake-Debug-e54a7a22e4b2e2c1e6eb.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "2.8.12"
@@ -152,8 +136,8 @@
 					"source" : "libraries/glew-cmake",
 					"targetIndexes" : 
 					[
-						7,
-						8
+						6,
+						7
 					]
 				},
 				{
@@ -174,7 +158,7 @@
 				{
 					"abstractTargetIndexes" : 
 					[
-						5
+						4
 					],
 					"build" : "libraries/glm/glm",
 					"jsonFile" : "directory-libraries.glm.glm-Debug-ff5fcef9948aaecafc2c.json",
@@ -187,7 +171,7 @@
 					"source" : "libraries/glm/glm",
 					"targetIndexes" : 
 					[
-						5
+						4
 					]
 				},
 				{
@@ -208,13 +192,13 @@
 					"source" : "libraries/easyVDB",
 					"targetIndexes" : 
 					[
-						3
+						2
 					]
 				},
 				{
 					"build" : "libraries/easyVDB/zlib_build",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-libraries.easyVDB.zlib_build-Debug-4d17ea57634fd17c1f00.json",
+					"jsonFile" : "directory-libraries.easyVDB.zlib_build-Debug-483dcc284ca3893c35fd.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "2.4.4"
@@ -224,8 +208,8 @@
 					"source" : "libraries/easyVDB/libraries/zlib",
 					"targetIndexes" : 
 					[
-						11,
-						12
+						10,
+						11
 					]
 				},
 				{
@@ -246,7 +230,7 @@
 				{
 					"abstractTargetIndexes" : 
 					[
-						4
+						2
 					],
 					"build" : "libraries/easyVDB/libraries/c-blosc/blosc",
 					"jsonFile" : "directory-libraries.easyVDB.libraries.c-blosc.blosc-Debug-d7c3ba04f58baf120896.json",
@@ -282,13 +266,12 @@
 					"targetIndexes" : 
 					[
 						0,
-						6
+						5
 					]
 				},
 				{
 					"abstractTargetIndexes" : 
 					[
-						0,
 						3
 					],
 					"directoryIndexes" : 
@@ -301,17 +284,16 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						2,
-						4,
-						9,
-						10
+						3,
+						8,
+						9
 					]
 				},
 				{
 					"abstractTargetIndexes" : 
 					[
-						1,
-						2
+						0,
+						1
 					],
 					"directoryIndexes" : 
 					[
@@ -321,14 +303,14 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						7,
-						8
+						6,
+						7
 					]
 				},
 				{
 					"abstractTargetIndexes" : 
 					[
-						5
+						4
 					],
 					"directoryIndexes" : 
 					[
@@ -339,7 +321,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						5
+						4
 					]
 				},
 				{
@@ -356,7 +338,7 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						3
+						2
 					]
 				},
 				{
@@ -368,14 +350,14 @@
 					"parentIndex" : 4,
 					"targetIndexes" : 
 					[
-						11,
-						12
+						10,
+						11
 					]
 				},
 				{
 					"abstractTargetIndexes" : 
 					[
-						4
+						2
 					],
 					"directoryIndexes" : 
 					[
@@ -395,7 +377,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ACG::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ACG-Debug-09e3fca7ea39f9d59fab.json",
+					"jsonFile" : "target-ACG-Debug-467045a4922ba6dffa98.json",
 					"name" : "ACG",
 					"projectIndex" : 0
 				},
@@ -405,13 +387,6 @@
 					"jsonFile" : "target-blosc_static-Debug-c5e7cc58177fa8c1b276.json",
 					"name" : "blosc_static",
 					"projectIndex" : 6
-				},
-				{
-					"directoryIndex" : 3,
-					"id" : "docs::@8059a9236cfad5662190",
-					"jsonFile" : "target-docs-Debug-16f28bbb4e4d93ba3062.json",
-					"name" : "docs",
-					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 7,

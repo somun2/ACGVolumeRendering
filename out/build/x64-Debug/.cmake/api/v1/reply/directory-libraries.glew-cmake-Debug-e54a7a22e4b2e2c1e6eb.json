@@ -50,7 +50,7 @@
 				"libraries/glew-cmake/lib/glewd.lib"
 			],
 			"targetId" : "libglew_static::@c91b4f570a1fcddf2341",
-			"targetIndex" : 8,
+			"targetIndex" : 7,
 			"type" : "target"
 		},
 		{
@@ -62,7 +62,7 @@
 				"libraries/glew-cmake/lib/glew-sharedd.lib"
 			],
 			"targetId" : "libglew_shared::@c91b4f570a1fcddf2341",
-			"targetIndex" : 7,
+			"targetIndex" : 6,
 			"targetIsImportLibrary" : true,
 			"type" : "target"
 		},
@@ -75,11 +75,11 @@
 			[
 				{
 					"id" : "libglew_static::@c91b4f570a1fcddf2341",
-					"index" : 8
+					"index" : 7
 				},
 				{
 					"id" : "libglew_shared::@c91b4f570a1fcddf2341",
-					"index" : 7
+					"index" : 6
 				}
 			],
 			"paths" : 
