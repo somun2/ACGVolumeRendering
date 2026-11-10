@@ -26,8 +26,8 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/u215241/source/repos/ACGVolumeR
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/imguizmo_cpp-populate
 
-//No help, variable specified on the command line.
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/MICROS~4/18/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe
+//make program
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~1/MIB055~1/18/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=

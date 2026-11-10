@@ -1,20 +1,23 @@
 #version 330 core
 
-in vec3 v_position;
 in vec3 v_world_position;
 
 uniform vec3 u_camera_position;
 uniform mat4 u_model;
 
-uniform vec4 u_color;
+uniform vec4 u_emission_color;
 uniform vec3 u_background_color;
 uniform float u_absorption;
-uniform float u_step_length;
-uniform bool u_heterogeneous;
-uniform float u_noise_scale;
-uniform vec3 u_noise_offset;
+uniform float u_density_scale;
+uniform float u_density_threshold;
+uniform float u_density_contrast;
+uniform int u_model_type;
 
 out vec4 FragColor;
+
+const int VOLUME_MODEL_HOMOGENEOUS = 0;
+const int VOLUME_MODEL_HETEROGENEOUS = 1;
+const int VOLUME_MODEL_ABSORPTION_EMISSION = 2;
 
 vec3 random3(vec3 c)
 {
@@ -66,24 +69,39 @@ float snoiseFractal(vec3 p)
     float value = 0.0;
     float amplitude = 0.5;
     float frequency = 1.0;
+    float amplitudeSum = 0.0;
 
     for (int octave = 0; octave < 5; ++octave)
     {
         value += amplitude * snoise(p * frequency);
+        amplitudeSum += amplitude;
         frequency *= 2.0;
         amplitude *= 0.5;
     }
 
-    return value;
+    // Normalize the accumulated octaves before remapping them to [0, 1].
+    return value / amplitudeSum;
 }
 
-// Ray-box intersection using the Slab Method
-vec2 intersectAABB(
-    vec3 rayOrigin,
-    vec3 rayDir,
-    vec3 boxMin,
-    vec3 boxMax
-)
+float sampleDensity(vec3 position)
+{
+    float noiseValue = 0.5 + 0.5 * clamp(
+        snoiseFractal(position * u_density_scale),
+        -1.0,
+        1.0
+    );
+
+    // Thresholding creates empty regions; contrast controls how quickly the
+    // remaining regions become opaque.
+    float density = max(
+        (noiseValue - u_density_threshold) /
+        max(1.0 - u_density_threshold, 0.0001),
+        0.0
+    );
+    return pow(clamp(density, 0.0, 1.0), max(u_density_contrast, 0.0001));
+}
+
+vec2 intersectAABB(vec3 rayOrigin, vec3 rayDir, vec3 boxMin, vec3 boxMax)
 {
     vec3 tMin = (boxMin - rayOrigin) / rayDir;
     vec3 tMax = (boxMax - rayOrigin) / rayDir;
@@ -99,17 +117,13 @@ vec2 intersectAABB(
 
 void main()
 {
-    // 1. Initialize the ray in world space
     vec3 rayOrigin = u_camera_position;
     vec3 rayDir = normalize(v_world_position - rayOrigin);
 
-    // 2. Transform ray to object space
     mat4 invModel = inverse(u_model);
-
     vec3 localOrigin = (invModel * vec4(rayOrigin, 1.0)).xyz;
     vec3 localDir = (invModel * vec4(rayDir, 0.0)).xyz;
 
-    // 3. Compute intersection with the cube
     vec2 intersections = intersectAABB(
         localOrigin,
         localDir,
@@ -119,55 +133,54 @@ void main()
 
     float tNear = intersections.x;
     float tFar = intersections.y;
-
-    // Check if the ray intersects the volume
     if (tFar < tNear || tFar < 0.0)
     {
         discard;
     }
 
     tNear = max(tNear, 0.0);
-
-    // Compute distance inside the volume
     float distanceInside = tFar - tNear;
-    float opticalThickness = 0.0;
 
-    if (u_heterogeneous)
+    // A fixed object-space step keeps the shader compatible with the controls
+    // already exposed by VolumeMaterial while preserving enough detail in the
+    // noise field.
+    const float stepLength = 0.01;
+    int stepCount = min(int(ceil(distanceInside / stepLength)), 1024);
+    float position = tNear;
+    float transmittance = 1.0;
+    vec3 emittedRadiance = vec3(0.0);
+
+    for (int stepIndex = 0; stepIndex < 1024; ++stepIndex)
     {
-        float stepLength = max(u_step_length, 0.0001);
-        float position = tNear;
-        int stepCount = int(ceil(distanceInside / stepLength));
-
-        for (int stepIndex = 0; stepIndex < 1024; ++stepIndex)
+        if (stepIndex >= stepCount)
         {
-            if (stepIndex >= stepCount)
-            {
-                break;
-            }
-
-            float currentStepLength = min(stepLength, tFar - position);
-            vec3 samplePosition = localOrigin + localDir * (position + 0.5 * currentStepLength);
-            float density = clamp(
-                0.5 + 0.5 * snoiseFractal(samplePosition * u_noise_scale + u_noise_offset),
-                0.0,
-                1.0
-            );
-
-            opticalThickness += density * u_absorption * currentStepLength;
-            position += currentStepLength;
+            break;
         }
+
+        float currentStepLength = min(stepLength, tFar - position);
+        vec3 samplePosition = localOrigin +
+            localDir * (position + 0.5 * currentStepLength);
+
+        float density = 1.0;
+        if (u_model_type != VOLUME_MODEL_HOMOGENEOUS)
+        {
+            density = sampleDensity(samplePosition);
+        }
+
+        float absorption = max(u_absorption, 0.0) * density;
+        float sampleTransmittance = exp(-absorption * currentStepLength);
+
+        if (u_model_type == VOLUME_MODEL_ABSORPTION_EMISSION)
+        {
+            emittedRadiance += transmittance *
+                (1.0 - sampleTransmittance) *
+                u_emission_color.rgb;
+        }
+
+        transmittance *= sampleTransmittance;
+        position += currentStepLength;
     }
-    else
-    {
-        // Preserve the original homogeneous volume behavior.
-        opticalThickness = distanceInside * u_absorption;
-    }
 
-    // Compute transmittance
-    float transmittance = exp(-opticalThickness);
-
-    // Compute final radiance
-    vec3 finalColor = u_background_color * transmittance;
-
+    vec3 finalColor = emittedRadiance + u_background_color * transmittance;
     FragColor = vec4(finalColor, 1.0);
 }
